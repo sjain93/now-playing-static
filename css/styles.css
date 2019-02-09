@@ -259,6 +259,6 @@ figure {
   .about {
     display: flex;
     align-items: center;
-    justify-content: center | space-evenly;
+    justify-content: space-around;
   }
 }
