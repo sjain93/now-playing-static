@@ -245,5 +245,20 @@ figure {
     position: relative;
     bottom: 0;
     left:0;
+    margin-left: 80px;
+  }
+
+  .footer-nav {
+    background-color: #333333;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center | space-evenly;
   }
 }
