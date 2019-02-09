@@ -106,9 +106,14 @@ figure {
   position: relative;
 }
 
+
 .movie-poster,
 .movie-backdrop {
   display: block;
+}
+
+.movie-backdrop {
+  background-size: 100%;
 }
 
 /*
@@ -197,11 +202,16 @@ figure {
   margin: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
   body {
     padding: 0;
   }
+
+  main {
+  padding-left: 80px;
+  }
+
   .site-nav {
     position: fixed;
     top: 0;
@@ -228,10 +238,6 @@ figure {
     height: 50px;
     margin: 0 0 0 -2px;
     z-index: 110;
-  }
-
-  .movie {
-    margin-left: 80px;
   }
 
   .movie-overview {
@@ -261,4 +267,41 @@ figure {
     align-items: center;
     justify-content: space-around;
   }
+}
+
+@media (min-width: 992px) {
+  .movie-poster,
+  .movie-backdrop {
+    display: block;
+  }
+
+  .movie-backdrop {
+    display: none;
+  }
+
+  .movie:first-child .movie-poster {
+    display: none;
+  }
+
+  .movie:first-child .movie-backdrop {
+    display: block;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .movie-overview {
+    display: none;
+  }
+
+  .movie:first-child .movie-overview {
+    display: block;
+  }
+
+  .movie:first-child {
+    grid-column: 1 / 4;
+  }
+
 }
