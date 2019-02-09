@@ -34,6 +34,7 @@ img {
 figure {
   margin: 0;
   padding: 0;
+  object-fit: fill;
 }
 
 
@@ -194,4 +195,26 @@ figure {
 
 .about > p {
   margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .site-nav {
+    position: fixed;
+    top: 0;
+    width: 80px;
+    z-index: 100;
+    background-color: #ffffff;
+  }
+
+  .site-logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    z-index: 110;
+  }
+
 }
